@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+
+    background: url(./images/bg-intro-desktop.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-color: hsl(0, 100%, 74%);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.page-wrapper {
+    max-width: 70%;
+    margin: 2em;
+    padding: 2em;
+}
+
+.reg-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reg-container .reg-container-item {
+    max-width: 50%;
+}
+
+.text-area {
+    padding: 2em;
+}
+
+.text-area h1 {
+    font-size: 2.5em;
+    line-height: 1em;
+    font-weight: 700;
+    margin: .5em 0;
+}
+
+.text-area p {
+    font-size: .8em;
+}
+
+
+.registration-area-alert {
+    background-color: hsl(248, 32%, 49%);
+    font-size: .8em;
+    text-align: center;
+    font-weight: lighter;
+
+    padding: .8em;
+    margin: 1em 0;
+    border-radius: 5px;
+
+    box-shadow: 0 6px hsla(249, 10%, 26%, 25%);
+}
+
+.registration-area-alert span {
+    font-weight: 700;
+}
+
+
+
+.form-area {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 6px hsla(249, 10%, 26%, 25%);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1em;
+}
+
+#form .form-item .form-item-input {
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    padding: .8em;
+    width: 100%;
+    font-weight: 700;
+
+}
+
+#form .form-item input:focus {
+    border: 1px solid hsl(248, 32%, 49%) ;
+}
+
+#form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5em 0;
+}
+
+.form-area .err-alert {
+    color:  hsl(0, 100%, 74%);
+    font-style: italic;
+    font-size: .6em;
+    text-align: right;
+    margin-right: .5em;
+    margin-top: .2em;
+}
+
+.form-area .error-alert-icon {
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: 98%;
+}
+
+.form-area .error-border {
+    border: 1px solid hsl(0, 100%, 74%);
+    border-radius: 5px;
+    padding: .8em;
+    width: 100%;
+    font-weight: 700;
+}
+
+.registration-terms-alert {
+    color: hsl(246, 25%, 77%);
+    font-size: .6em;
+    font-weight: 500;
+}
+
+.registration-terms-alert span {
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 600;
+}
+
+#form #submitBtn {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px hsla(154, 59%, 51%, 25%);
+    background-image: none;
+}
+
+#form #submitBtn:hover {
+    background-color: hsl(154, 59%, 60%);
+    transition: background-color .5s;
+}
+
+@media(max-width: 1060px) {
+
+    .page-wrapper {
+        margin: 0;
+        padding: 0;
+        max-width: 90%;
+        margin: .8em;
+        padding: 1em;
+    }
+
+    .text-area {
+        padding: .5em;
+    }
+
+    .text-area p {
+        font-size: .9em;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media(max-width: 815px) {
+    body {
+        text-align: center;
+        font-size: 1.2em;
+        background-image: url(./images/bg-intro-mobile.png);
+        background-repeat: repeat;
+    }
+    .reg-container {
+        flex-direction: column;
+    }
+
+    .page-wrapper {
+        min-width: 100%;
+        margin: 1em;
+        padding: 1.5em;
+    }
+
+    .reg-container .reg-container-item {
+        max-width: 100%;
+    }
+
+    .text-area{
+        padding: .5em;
+    }
+
+    .text-area h1 {
+        font-size: 1.5em;
+    }
+
+    .text-area p {
+        font-size: .7em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .registration-area-alert {
+        padding: 1em 2.5em;
+    }
+
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(248, 32%, 49%); }

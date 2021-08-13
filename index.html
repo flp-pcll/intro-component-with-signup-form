@@ -1,0 +1,125 @@
+<!--
+  _____.__                       .__  .__   
+_/ ____\  | ______ ______   ____ |  | |  |  
+\   __\|  | \____ \\____ \_/ ___\|  | |  |  
+ |  |  |  |_|  |_> >  |_> >  \___|  |_|  |__
+ |__|  |____/   __/|   __/ \___  >____/____/ • 2021
+            |__|   |__|        \/           
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!--font: Poppins (400, 500, 600, 700)-->
+  <!--font-family: 'Poppins', sans-serif;-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <main>
+      <div class="reg-container">
+        <section class="reg-container-item text-area">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+            but understanding how developers think is invaluable. 
+          </p>
+        </section>
+        
+        <section class="reg-container-item registration-area">
+          <div class="registration-area-item registration-area-alert">
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </div>
+          <div class="registration-area-item form-area">
+
+            <form action="/" 
+            id="form" 
+            autocomplete="off"
+            novalidate>
+
+              <div class="first-name form-item">
+                <input type="text" 
+                name="first name" 
+                class="form-item-input"
+                id="firstName" 
+                placeholder="First Name" 
+                onfocus="this.placeholder=''" 
+                onblur="this.placeholder='First Name'"
+                aria-label="First Name">
+                <small class="err-alert" id="firstNameError" style="display: none;">First Name cannot be empty</small>
+              </div>
+
+              <div class="last-name form-item">
+                <input type="text" 
+                class="form-item-input"
+                name="lastName" 
+                id="lastName" 
+                placeholder="Last Name" 
+                onfocus="this.placeholder=''" 
+                onblur="this.placeholder='Last Name'"
+                aria-label="Last Name">
+                <small class="err-alert" id="lastNameError" style="display: none;">Last Name cannot be empty</small>
+              </div>
+
+              <div class="email form-item">
+                <input type="email"
+                class="form-item-input"
+                name="userEmail" 
+                id="userEmail" 
+                placeholder="Email Address" 
+                onfocus="this.placeholder=''" 
+                onblur="this.placeholder='Email Adress'"
+                aria-label="Email">
+                <small class="err-alert" id="userEmailError" style="display: none;">Looks like this is not an email</small>
+              </div>
+
+              <div class="password form-item">
+                <input type="password"
+                class="form-item-input"
+                name="userPassword" 
+                id="userPassword" 
+                placeholder="Password" 
+                onfocus="this.placeholder=''" 
+                onblur="this.placeholder='Password'"
+                aria-label="Password">
+                <small class="err-alert" id="userPasswordError" style="display: none;">Password cannot be empty</small>
+              </div>
+
+              <div class="submit-registration btn-area form-item">
+                <input 
+                class="form-item-input"
+                type="submit" 
+                id="submitBtn" 
+                value="CLAIM YOUR FREE TRIAL">
+              </div>
+
+              <small class="registration-terms-alert">
+                By clicking the button, you are agreeing to our <span>Terms and Services</span>
+              </small>
+
+            </form>
+
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/flp-pcll" target="_blank">flp-pcll</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
